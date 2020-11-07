@@ -1,0 +1,30 @@
+{{!-- <h1 class="container text-center ">Display details</h1><hr style="background-color: cyan;">
+{{#each list}}
+<li>{{this}}</li>
+{{/each}}  --}}
+{{!-- <div style="background:url(/images/3.jpg); background-size:cover; background-repeat:no-repeat ;"> --}}
+<table class="table table-striped text-white">
+    <a href="http://localhost:5000/students/" type="button" class="btn btn-primary">Home page</a>
+<thead>
+    <tr class="text-blue">
+        <th>firstname</th>
+        <th>Email</th>
+        <th>Father Name</th>
+        <th>phone</th>
+        {{!-- <th>update</th> --}}
+    </tr>
+</thead>
+<tbody>
+    {{#each list}}
+    <tr>
+        <td>hii{{this.Firstname}}</td>
+        <td>{{this.email}}</td>
+          <td>{{this.Father}}</td>
+        <td>{{this.Phone}}</td>
+        <td><a href="/students/{{this._id}}" type="button" class="btn btn-primary btn-block">Edit</a></td>
+        
+    </tr>
+    {{/each}}
+</tbody>
+</table>
+{{!-- </div> --}}

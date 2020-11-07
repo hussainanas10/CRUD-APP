@@ -1,0 +1,34 @@
+{{!-- <img src="3.jpg" class="img-thumbnail" alt="Cinque Terre"> --}}
+{{!-- {{#each}} --}}
+<h1 class=" well well-lg text-center text-white" >Enter your details</h1><hr style="background: black;">
+
+<form action="/students" class="text-white" method="POST" >
+<a href="http://localhost:5000/students/" type="button" class="btn btn-primary">Home page</a>
+<input type="hidden"  name="_id" value="{{list._id}}" />
+    <div class="form-group ">
+        First name:<br>
+        <input type="text"  placeholder="First name" class="form-control" name="Firstname" value="{{list.Firstname}}" /><br>
+    </div>
+    <div class="form-group">
+        Email:<br>
+        <input type="email" placeholder="Email" name="email"  class="form-control" value="{{list.email}}"><br>
+    </div>
+    <div class="form-group">
+
+        Father Name:<br>
+        <input type="text" placeholder="Fathers name" name="Father"  class="form-control" value="{{list.Father}}"><br>
+    </div>
+    <div class="form-group">
+
+        Password:<br>
+        <input type="password" placeholder="password" class="form-control"><br>
+    </div>
+    <div class="form-group">
+
+        Phone:<br>
+        <input type="text" placeholder="+91" name="Phone"  class="form-control" value="{{list.Phone}}"><br>
+    </div>
+    <input type="submit" class="btn btn-success">
+    {{!-- <a href="http://localhost:5000/students/" type="button" class="btn btn-primary">Home page</a> --}}
+</form  >
+{{!-- {{/each}} --}}
